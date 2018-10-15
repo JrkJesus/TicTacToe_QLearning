@@ -24,10 +24,10 @@ if input("Would you like to train AI vs AI? (yes/no): ") == "no":
         os.system("cls")
         game.display_field()
         if game.no_space_left():
-            print("It`s draw")
+            print("\nIt`s draw")
         else:
-            print("The winner is {}".format(game.winner))
-        if input("One more game?: ") == "yes":
+            print("\nThe winner is {}".format(game.winner))
+        if input("\nOne more game?: ") == "yes":
             continue
         else:
             break
@@ -46,5 +46,5 @@ else:
     with open("q_base.csv", "w", newline="") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerows(p1.q_table.items())
-    print("Training complete, the program will automatically close in 5 sec")
+    print("\nTraining complete, the program will automatically close in 5 sec")
     time.sleep(5)

@@ -11,7 +11,7 @@ class Player:
 
     def turn(self, field):
         return int(input((
-               "It`s {0} turn. Choose position (1-9): ").format(
+               "\nIt`s {0} turn. Choose position (1-9): ").format(
                 kernel.symbol)))
 
     def new_game(self, symbol):
