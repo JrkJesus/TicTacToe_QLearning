@@ -36,7 +36,7 @@ else:
     p2 = QPlayer()
     bar = progressbar.ProgressBar(
         maxval=200000, widgets=[progressbar.Bar(
-         '■', '[', ']'), ' ', progressbar.Percentage()])
+         "■", "[', ']"), " ", progressbar.Percentage()])
     bar.start()
     for i in range(200000):
         bar.update(i)
